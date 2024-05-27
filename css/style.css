@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-bg-color: #cc8e35;
+    --secondary-bg-color: #222f3e;
+
+    --glass-top: rgba(255,255,255,0);
+    --glass-bottom: rgba(255,255,255,0.1)
+
+}
+
+/* ----- Global styles ----- */
+.page-section {
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+    padding-bottom: 1rem;
+}
+
+.container h2 {
+    font-size: 36px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.inv-hr {
+    border: 0;
+    border-top: 1px solid white;
+    opacity: 0.5;
+    margin: 20px 0;
+}
+
+ 
+
+
+/* ----- Navigation ----- */
+
+#nav-logo {
+    width: 120px;
+    height: auto;
+}
+
+
+/* ----- About me section ----- */
+/* Card styles */
+.card-headshot {
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 125px;
+    margin: 3rem;
+}
+
+.headshot-body {
+    color: white;
+    padding: 2rem;
+    padding-top: 0;
+}
+.headshot-body h3 {
+    padding-top: 2rem;
+}
+
+.about-us-card {
+    background: linear-gradient(to bottom, var(--primary-bg-color), #222f3e); 
+    /* background: url('../media/videos/promo.mp4'); */
+    border-radius: 35px;
+}
+
+.background-card {
+    border-radius: 35px;
+    box-shadow: none;
+}
+
+.video-container {
+    width: 80%; /* Set the video container to 80% of the card's width */
+    margin: 0 auto; /* Center the video container within the card */
+    margin-top: 40px;
+    
+}
+
+.video-container video {
+    width: 100%; /* Make the video take up the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 35px;
+}
+
+
+/* ----- Hero ----- */
+.jumbotron {
+    background: 
+    linear-gradient(to right, var(--primary-bg-color), var(--secondary-bg-color));
+    background-position: center center;
+    color: white;
+}
+
+.jumbotron-body {
+    padding: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.btn-lg {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    width: 150px;
+    border-radius: 25px;
+    ;
+} 
+
+.btn-lg:hover {
+    background-color: white;
+    color: var(--secondary-bg-color);
+    transition: background-color 0.3s ease-out;
+}
+
+
+/* ----- Projects ----- */
+.portfolio {
+    background: linear-gradient(to bottom, #222f3e, #71322a
+    );
+}
+
+.portfolio h2 {
+    color: white;
+}
+
+.portfolio hr {
+    color: white;
+}
+
+.portfolio-item {
+    border-radius: 25px;
+    overflow: hidden;
+    border: none;
+    background: linear-gradient(to bottom right, var(--glass-bottom),var(--glass-bottom));
+    color: white;
+}
+
+.card-img-large {
+    height: ;
+}
+
+.row {
+    padding-bottom: 1rem;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.025);
+    transition: transform 0.3s ease-out;
+}
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0);
+    width: fit-content;
+    border-radius: 20px;
+    
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #B53471;
+    border-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-out;
+} 
+
+/* Residents */
+.card {
+    width: 300px; /* Set a fixed width for the cards */
+    margin: 10px auto; /* Add margin for spacing and center align */
+    flex: 1 1 auto; /* Allow flex properties to adjust spacing */
+}
+
+.card-img-top {
+    width: 100%; /* Make the image take up the full width of the card */
+    max-height: 250px; /* Set the maximum height you desire */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.page-section .container {
+    display: flex;
+    flex-wrap: wrap; 
+    /* justify-content: center;  */
+}
+
+/* ----- Skills ----- */
+.page-section.skills {
+    background: url(../images/background-art-01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-height: fit-content;
+    background-position: center;
+}
+
+.skill-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 35px;
+}
+
+/* ----- Contact me ----- */
+.contact-me {
+    background: linear-gradient(to bottom right, #71322a, #416a82);
+}
+
+.contact-me {
+    color: white;
+}
+
+.social-icons-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons-row a {
+    padding: 20px;
+}
+
+.contact-animation {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-animation img{
+    width: auto;
+    height: 100px;
+    padding: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Global styles */
+    .page-section {
+        padding: 0.5rem;
+    }
+    .card {
+        width: 100%; /* Make cards full-width on small screens */
+    }
+    .card-headshot {
+        width: 200px;
+        height: 200px;
+    }
+    .container h2 {
+        padding-top: 1.5rem;
+    }
+    .flex-row {
+        padding: 0.25rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .row {
+        padding-bottom: 0;
+    }
+    .jumbotron-body {
+        padding: 2rem;
+    }
+    .page-section.skills {
+        background-size: cover;
+    }
+    .skill-card {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .social-icons-row {
+        display: flex;
+        flex-direction: column;
+        justify-content;
+    }
+    .social-icons-row h2 {
+        padding-bottom: 3rem;
+    }
+}
