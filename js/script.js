@@ -1,16 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const continueButton = document.getElementById('continue-button');
-    continueButton.addEventListener('click', function() {
-        const landingPage = document.getElementById('landing-page');
-        landingPage.classList.add('fade-out');
-        setTimeout(function() {
-            landingPage.style.display = 'none';
-            document.getElementById('main-content').style.display = 'block';
-        }, 600); // Match this duration with the CSS transition duration
-    });
+window.addEventListener('load', function() {
+    // Create a new Image object
+    let bgImage = new Image();
+    
+    // Set the source of the image to match the background image
+    bgImage.src = 'path/to/your/image.jpg'; // Replace with your image path
 
-    const myButton = document.getElementById('myButton');
-    myButton.addEventListener('click', function() {
-        alert('Button was clicked!');
-    });
+    // When the image is loaded, set the height of the jumbotron
+    bgImage.onload = function() {
+        // Get the height of the image
+        let imgHeight = bgImage.height;
+
+        // Set the height of the jumbotron to the height of the image
+        document.getElementById('myJumbotron').style.height = imgHeight + 'px';
+    }
 });

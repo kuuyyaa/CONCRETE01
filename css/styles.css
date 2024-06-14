@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar-brand img {
+    height: 25px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+}
+
+.menu-icon .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.storefront-image {
+    width: 110%;
+    
+    height: auto;
+}
+
+.header h1 {
+    font-family: 'Roman Antique', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 55px;
+    left: 42%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.section {
+    position: relative;
+}
+
+.door-image {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 77.5%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border-radius: 5px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.overlay-text p {
+    font-family: 'Roman Antique', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.links {
+    margin-top: 20px;
+    margin: 35px
+}
+
+.links a {
+    display: block;
+    font-family: 'Roman Antique', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 10px 0;
+    color: #fff;
+    text-align: right;
+}
+
+.links a:hover {
+    /* color: #000; */
+}
+
+.brands {
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.brands ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.brands li {
+    margin: 5px 0;
+}
+
+.brands button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.brands button:hover {
+    background-color: #555;
+}

@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-bg-color: #cc8e35;
-    --secondary-bg-color: #222f3e;
+    --primary-bg-color: #07868a;
+    --secondary-bg-color: #080741;
 
     --glass-top: rgba(255,255,255,0);
     --glass-bottom: rgba(255,255,255,0.1)
@@ -16,7 +16,6 @@
 /* ----- Global styles ----- */
 .page-section {
     padding: 2rem;
-    padding-bottom: 4rem;
 }
 
 h1 {
@@ -36,16 +35,13 @@ h1 {
 }
 
 hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
+    /* padding-bottom: 8px; */
 }
 
 .inv-hr {
-    border: 0;
-    border-top: 1px solid white;
-    opacity: 0.5;
-    margin: 20px 0;
+    border-color: white;
+    border-width: 1px;
+    opacity: 0.2;
 }
 
  
@@ -57,10 +53,27 @@ hr {
     width: 120px;
     height: auto;
 }
+.bg-dark {
+    background-color: black !important;
+}
+.nav-link {
+    text-align: left !important;
+    
+}
+.navbar-nav .nav-link {
+    padding-left: 5%;
+}
+.navbar-nav {
+    padding-top: 2%;
+}
 
 
 /* ----- About me section ----- */
 /* Card styles */
+.about-me {
+    background-color: black;
+}
+
 .card-headshot {
     height: 250px;
     width: 250px;
@@ -72,15 +85,21 @@ hr {
 .headshot-body {
     color: white;
     padding: 2rem;
-    padding-top: 0;
-}
-.headshot-body h3 {
-    padding-top: 2rem;
+    /* padding-top: 20rem; */
+    
 }
 
-.about-us-card {
-    background: linear-gradient(to bottom, var(--primary-bg-color), #222f3e); 
-    /* background: url('../media/videos/promo.mp4'); */
+.headshot-body p {
+    margin: 0;
+    text-align: right;
+    font-size: 20px;
+    position: bottom;
+}
+
+.about-me-card {
+    background-image: url('/media/images/frontDoor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 35px;
 }
 
@@ -89,25 +108,30 @@ hr {
     box-shadow: none;
 }
 
-.video-container {
-    width: 80%; /* Set the video container to 80% of the card's width */
-    margin: 0 auto; /* Center the video container within the card */
-    margin-top: 40px;
-    
+.card-body {
+    color: white;
+    background-color: black;
 }
-
-.video-container video {
-    width: 100%; /* Make the video take up the full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 35px;
+.card-body ul {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
 }
-
+.card-body h4 {
+    margin-bottom: 1rem;
+}
 
 /* ----- Hero ----- */
 .jumbotron {
-    background: 
-    linear-gradient(to right, var(--primary-bg-color), var(--secondary-bg-color));
-    background-position: center center;
+    background-image: url('../media/images/storeFront.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    max-height: fit-content;
+    margin-bottom: 0; /* Remove default margin */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    border-radius: 0%;
     color: white;
 }
 
@@ -134,8 +158,7 @@ hr {
 
 /* ----- Projects ----- */
 .portfolio {
-    background: linear-gradient(to bottom, #222f3e, #71322a
-    );
+    background: linear-gradient(to bottom, black, #1d150a);
 }
 
 .portfolio h2 {
@@ -182,32 +205,14 @@ hr {
     transition: background-color 0.3s ease-out;
 } 
 
-/* Residents */
-.card {
-    width: 300px; /* Set a fixed width for the cards */
-    margin: 10px auto; /* Add margin for spacing and center align */
-    flex: 1 1 auto; /* Allow flex properties to adjust spacing */
-}
-
-.card-img-top {
-    width: 100%; /* Make the image take up the full width of the card */
-    max-height: 250px; /* Set the maximum height you desire */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-}
-
-.page-section .container {
-    display: flex;
-    flex-wrap: wrap; 
-    /* justify-content: center;  */
-}
-
 /* ----- Skills ----- */
 .page-section.skills {
-    background: url(../images/background-art-01.png);
+    background: linear-gradient(to bottom, #1d150a, black);
     background-repeat: no-repeat;
     background-size: 100%;
     max-height: fit-content;
     background-position: center;
+    color: white;
 }
 
 .skill-card {
@@ -215,9 +220,60 @@ hr {
     border-radius: 35px;
 }
 
+/* ----- Residents ----- */
+.residents {
+    background: linear-gradient(to bottom, black, #2b1e0b);
+}
+
+.residents h2 {
+    color: white;
+}
+
+.residents hr {
+    color: white;
+}
+
+.resident-item {
+    border-radius: 25px;
+    overflow: hidden;
+    border: none;
+    background: linear-gradient(to bottom right, var(--glass-bottom),var(--glass-bottom));
+    color: white;
+}
+
+.card-img-large {
+    height: ;
+}
+
+.row {
+    padding-bottom: 1rem;
+}
+
+.resident-item:hover {
+    transform: scale(1.025);
+    transition: transform 0.3s ease-out;
+}
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0);
+    width: fit-content;
+    border-radius: 20px;
+    
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #B53471;
+    border-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-out;
+} 
+
 /* ----- Contact me ----- */
 .contact-me {
-    background: linear-gradient(to bottom right, #71322a, #416a82);
+    background-image: url('../media/images/IMG_5445.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contact-me {
@@ -240,8 +296,8 @@ hr {
 }
 
 .contact-animation img{
-    width: auto;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     padding: 1rem;
 }
 
@@ -252,9 +308,6 @@ hr {
     .page-section {
         padding: 0.5rem;
     }
-    .card {
-        width: 100%; /* Make cards full-width on small screens */
-    }
     .card-headshot {
         width: 200px;
         height: 200px;
@@ -263,12 +316,9 @@ hr {
         padding-top: 1.5rem;
     }
     .flex-row {
-        padding: 0.25rem;
+        /* padding: 3.25rem; */
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-    }
-    .row {
-        padding-bottom: 0;
     }
     .jumbotron-body {
         padding: 2rem;
@@ -287,4 +337,24 @@ hr {
     .social-icons-row h2 {
         padding-bottom: 3rem;
     }
+
+    /* headshot */
+    .headshot-body {
+        color: white;
+        padding: 2rem;
+        padding-top: 20rem;
+    }
+
+    .card-body {
+        margin-bottom: 0%;
+    }
+
+    /* navbar */
+    .nav-link {
+        color: white !important;
+        text-align: center !important;
+    }
+
+    /* jumbotron */
+    
 }
