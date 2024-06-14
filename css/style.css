@@ -120,6 +120,35 @@ hr {
     margin-bottom: 1rem;
 }
 
+.btn-about {
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0);
+    width: fit-content;
+    border-radius: 30px;
+}
+
+/* Button hover effect */
+.btn-about:hover {
+    background-color: white;
+    color: #B53471;
+    border-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-out;
+}
+
+/* Align button to the right */
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Adjust margin and padding for the button */
+.button-container .btn-about {
+    margin: 0;
+    padding: 10px 20px;
+}
+
 /* ----- Hero ----- */
 .jumbotron {
     background-image: url('../media/images/storeFront.jpg');
@@ -204,6 +233,11 @@ hr {
     border-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease-out;
 } 
+
+.colabs-container {
+    display: flex;
+    flex-direction: column;
+}
 
 /* ----- Skills ----- */
 .page-section.skills {
@@ -336,6 +370,15 @@ hr {
     }
     .social-icons-row h2 {
         padding-bottom: 3rem;
+    }
+
+    .colabs-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .colabs-container .card {
+        flex: 0 0 48%; /* Adjust to desired width, such as 48% for two cards per row with some gap */
+        margin: 1%; /* Adjust to add spacing between cards */
     }
 
     /* headshot */
