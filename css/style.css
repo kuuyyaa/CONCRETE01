@@ -97,7 +97,7 @@ hr {
 }
 
 .about-me-card {
-    background-image: url('/media/images/frontDoor.jpg');
+    background-image: url('../media/images/frontDoor.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 35px;
