@@ -34,6 +34,14 @@ h1 {
     font-size: 36px;
 }
 
+.card-body h4{
+    font-family: 'Roman Antique', sans-serif;
+}
+
+h5 {
+    white-space: nowrap;
+}
+
 hr {
     /* padding-bottom: 8px; */
 }
@@ -385,7 +393,7 @@ hr {
     .headshot-body {
         color: white;
         padding: 2rem;
-        padding-top: 20rem;
+        padding-top: 30rem;
     }
 
     .card-body {
