@@ -32,6 +32,7 @@ h1 {
 
 .container h2 {
     font-size: 36px;
+    color: white;
 }
 
 .card-body h4{
@@ -78,6 +79,10 @@ hr {
 
 /* ----- About me section ----- */
 /* Card styles */
+.typewrite p {
+    font-size: 20px;
+}
+
 .about-me {
     background-color: black;
 }
@@ -108,7 +113,10 @@ hr {
     background-image: url('../media/images/frontDoor.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 35px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .background-card {
@@ -129,15 +137,15 @@ hr {
 }
 
 .btn-about {
-    background-color: white;
-    border-color: rgba(0, 0, 0, 0);
+    /* background-color: white; */
+
     width: fit-content;
     border-radius: 30px;
 }
 
 /* Button hover effect */
 .btn-about:hover {
-    background-color: white;
+    /* background-color: white; */
     color: #B53471;
     border-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease-out;
@@ -152,10 +160,90 @@ hr {
 }
 
 /* Adjust margin and padding for the button */
-.button-container .btn-about {
+/* .button-container .btn-about {
     margin: 0;
     padding: 10px 20px;
+} */
+
+/* STORE STOCK */
+
+
+.store-card {
+    border-radius: 35px;
+    box-shadow: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced between top and bottom */
+    overflow: hidden;
+    position: relative; /* Positioning for background image */
 }
+
+.card.store-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 16rem; /* Ensure the height is consistent */
+    border-color: black;
+    border-radius: 35px; /* For rounded corners */
+    box-shadow: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.stock-card {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    flex-grow: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced between top and bottom */
+}
+
+.card.store-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Optional: text shadow for readability */
+}
+
+.card.store-card a {
+    color: #fff;
+}
+
+/* Ensure button container is at the bottom */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    align-items: flex-end; /* Align items to the bottom */
+}
+
+.btn-about {
+    /* background-color: rgba(255, 255, 255, 0.7);  */
+    color: #000;
+    /* padding: 10px 20px; */
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px; */
+    transition: background-color 0.3s ease;
+}
+
+.btn-about:hover {
+    background-color: rgba(0,0,0); /* Darker shade for hover effect */
+    color: #000;
+}
+
 
 /* ----- Hero ----- */
 .jumbotron {
