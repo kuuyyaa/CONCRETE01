@@ -173,6 +173,7 @@ hr {
     margin-bottom: 10px;
 }
 
+
 /* Adjust margin and padding for the button */
 /* .button-container .btn-about {
     margin: 0;
@@ -516,6 +517,11 @@ hr {
         color: white;
         padding: 2rem;
         padding-top: 30rem;
+    }
+
+    .headshot-body p {
+        font-size: 28px;
+        text-align: center;
     }
 
     .card-body {
