@@ -485,6 +485,7 @@ hr {
 
     .jumbotron-body {
         padding: 2rem;
+        padding-top: 8rem;
     }
     .page-section.skills {
         background-size: cover;
