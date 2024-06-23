@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 :root {
@@ -11,6 +14,10 @@
     --glass-top: rgba(255,255,255,0);
     --glass-bottom: rgba(255,255,255,0.1)
 
+}
+
+.bold-text{
+    font-weight: bold;
 }
 
 /* ----- Global styles ----- */
@@ -76,6 +83,15 @@ hr {
     padding-top: 2%;
 }
 
+.inv-hr .nav-divider {
+    margin-top: 1rem;
+}
+
+.nav-item {
+    color: antiquewhite;
+}
+
+
 
 /* ----- About me section ----- */
 /* Card styles */
@@ -89,7 +105,6 @@ hr {
     height: 250px;
     width: 250px;
     background-color: white;
-    border-radius: 125px;
     margin: 3rem;
 }
 
@@ -97,6 +112,7 @@ hr {
     color: white;
     padding: 2rem;
     /* padding-top: 20rem; */
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); */
     
 }
 
@@ -112,7 +128,7 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 35px;
+    /* border-radius: 35px; */
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -262,6 +278,16 @@ hr {
     padding: 2rem;
     padding-left: 6rem;
     padding-right: 6rem;
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.jumbotron-body h1{
+    margin-bottom: 0px !important;
+    line-height: 3rem;
+    text-shadow: #2b1e0b 1px 0 10px;;
 }
 
 .btn-lg {
@@ -448,6 +474,15 @@ hr {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
+
+    /* jumbotron */
+    .jumbotron-body h1{
+    margin-bottom: 0px !important;
+    line-height: 1.8rem;
+    text-shadow: #2b1e0b 1px 0 10px;
+    font-size: 2rem;
+}
+
     .jumbotron-body {
         padding: 2rem;
     }
@@ -488,8 +523,9 @@ hr {
 
     /* navbar */
     .nav-link {
-        color: white !important;
+        /* color: antiquewhite !important; */
         text-align: center !important;
+        font-size: 22px;
     }
 
     /* jumbotron */
