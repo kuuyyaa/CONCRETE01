@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* :root {
+    
+} */
+
+.bold-text{
+    font-weight: bold;
+}
+
+/* -------------------- Global styles -------------------- */
+.page-section {
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+    padding-bottom: 1rem;
+}
+
+.container h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.card-body h4{
+    font-family: 'Roman Antique', sans-serif;
+}
+
+h5 {
+    white-space: nowrap;
+}
+
+.inv-hr {
+    border-color: white;
+    border-width: 1px;
+    opacity: 0.2;
+}
+
+/* -------------------- Navigation -------------------- */
+
+#nav-logo {
+    width: 120px;
+    height: auto;
+}
+.bg-dark {
+    background-color: black !important;
+}
+.nav-link {
+    text-align: left !important;
+    
+}
+
+.navbar-nav {
+    padding-top: 2%;
+}
+
+.inv-hr .nav-divider {
+    margin-top: 1rem;
+}
+
+.nav-item {
+    color: antiquewhite;
+}
+
+/* -------------------- Hero -------------------- */
+.jumbotron-jewellery {
+    background-image: url('../media/jewellery/olgamiHeader.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    max-height: fit-content;
+    margin-bottom: 0; /* Remove default margin */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    border-radius: 0%;
+    color: white;
+}
+
+.jumbotron-jewellery-body {
+    padding: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    /* font-family: "Judson", serif; */
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.jumbotron-jewellery-body h1{
+    margin-bottom: 0px !important;
+    line-height: 3rem;
+    text-shadow: #2b1e0b 1px 0 10px;
+}
+
+
+/* -------------------- Media Query -------------------- */
+/* Global styles */
+.page-section {
+    padding: 0.5rem;
+}
+.card-headshot {
+    width: 200px;
+    height: 200px;
+}
+.container h2 {
+    padding-top: 1.5rem;
+}
+.flex-row {
+    /* padding: 3.25rem; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* jumbotron */
+.jumbotron-jewellery-body h1{
+margin-bottom: 0px !important;
+line-height: 1.8rem;
+text-shadow: #2b1e0b 1px 0 5px;
+font-size: 2rem;
+}
+
+.jumbotron-jewellery-body {
+    padding: 2rem;
+    padding-top: 8rem;
+}
+.page-section.skills {
+    background-size: cover;
+}
+.skill-card {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.social-icons-row {
+    display: flex;
+    flex-direction: column;
+    justify-content;
+}
+.social-icons-row h2 {
+    padding-bottom: 3rem;
+}
+
+.colabs-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.colabs-container .card {
+    flex: 0 0 48%; /* Adjust to desired width, such as 48% for two cards per row with some gap */
+    margin: 1%; /* Adjust to add spacing between cards */
+}
+
+/* headshot */
+.headshot-body {
+    color: white;
+    padding: 2rem;
+    padding-top: 25rem;
+    padding-bottom: 5rem;
+}
+
+.headshot-body p {
+    font-size: 28px;
+    text-align: center;
+}
+
+.card-body {
+    margin-bottom: 0%;
+}
+
+/* navbar */
+.nav-link {
+    /* color: antiquewhite !important; */
+    text-align: center !important;
+    font-size: 22px;
+}
